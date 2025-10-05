@@ -1,6 +1,4 @@
 import { useParams } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import { MapPin, Home, Maximize, Bed, Bath, Car } from "lucide-react";
@@ -53,9 +51,6 @@ const PropertyDetail = () => {
 
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <WhatsAppButton />
-
       <div className="pt-16">
         {/* Hero Section */}
         <div className="relative h-[400px]">

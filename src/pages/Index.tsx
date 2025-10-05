@@ -1,5 +1,3 @@
-import Navbar from "@/components/Navbar";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import Footer from "@/components/Footer";
 import { Building2, Award, Users, TrendingUp } from "lucide-react";
@@ -7,8 +5,6 @@ import { Building2, Award, Users, TrendingUp } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <WhatsAppButton />
 
       {/* Hero Carousel */}
       <div className="pt-16">

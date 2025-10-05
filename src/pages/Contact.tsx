@@ -1,5 +1,3 @@
-import Navbar from "@/components/Navbar";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,9 +13,6 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <WhatsAppButton />
-
       <div className="pt-16">
         {/* Hero Section */}
         <div className="bg-primary text-white py-20">

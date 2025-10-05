@@ -1,14 +1,9 @@
-import Navbar from "@/components/Navbar";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import { Target, Eye, Award } from "lucide-react";
 
 const About = () => {
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <WhatsAppButton />
-
       <div className="pt-16">
         {/* Hero Section */}
         <div className="bg-primary text-white py-20">
