@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import ImageCarousel from "@/components/ImageCarousel";
 import Footer from "@/components/Footer";
-import { Building2, Award, Users, TrendingUp } from "lucide-react";
+import { Building2, Award, Users, TrendingUp, Bed, Bath, Maximize } from "lucide-react";
 
 const Index = () => {
   return (
@@ -11,11 +12,104 @@ const Index = () => {
         <ImageCarousel />
       </div>
 
-      {/* About Project Section */}
+      {/* Our Properties Section */}
+      <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Properties</h2>
+            <div className="w-24 h-1 bg-accent mx-auto"></div>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-6">
+              Discover our exclusive collection of premium properties
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Property 1 Card */}
+            <Link to="/property/1" className="group">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop"
+                    alt="Luxury Villa Property"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy-dark/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className="inline-block px-4 py-1 bg-accent rounded-full text-sm font-semibold mb-4">
+                    Featured
+                  </div>
+                  <h3 className="text-3xl font-bold mb-3 group-hover:text-accent transition-colors">
+                    Luxury Villa Estate
+                  </h3>
+                  <p className="text-gray-200 mb-4 line-clamp-2">
+                    Experience unparalleled luxury living in this magnificent estate featuring world-class amenities
+                  </p>
+                  <div className="flex items-center gap-6 text-sm">
+                    <span className="flex items-center gap-2">
+                      <Bed className="h-4 w-4 text-accent" />
+                      4 Beds
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Bath className="h-4 w-4 text-accent" />
+                      3 Baths
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Maximize className="h-4 w-4 text-accent" />
+                      3500 sqft
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Property 2 Card */}
+            <Link to="/property/2" className="group">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+                    alt="Modern Penthouse Property"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy-dark/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className="inline-block px-4 py-1 bg-accent rounded-full text-sm font-semibold mb-4">
+                    Premium
+                  </div>
+                  <h3 className="text-3xl font-bold mb-3 group-hover:text-accent transition-colors">
+                    Modern Penthouse
+                  </h3>
+                  <p className="text-gray-200 mb-4 line-clamp-2">
+                    Sophisticated urban living with breathtaking city views and contemporary design excellence
+                  </p>
+                  <div className="flex items-center gap-6 text-sm">
+                    <span className="flex items-center gap-2">
+                      <Bed className="h-4 w-4 text-accent" />
+                      3 Beds
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Bath className="h-4 w-4 text-accent" />
+                      2 Baths
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Maximize className="h-4 w-4 text-accent" />
+                      2800 sqft
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">About Our Projects</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Why Choose Us</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We pride ourselves on delivering exceptional residential and commercial properties that exceed expectations
             </p>

@@ -35,29 +35,31 @@ const Navbar = () => {
 
             {/* Property Dropdown */}
             <div
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setShowPropertyMenu(true)}
               onMouseLeave={() => setShowPropertyMenu(false)}
             >
-              <button className="flex items-center gap-1 text-white hover:text-accent transition-colors">
+              <button className="flex items-center gap-1 text-white hover:text-accent transition-colors py-2">
                 Property
                 <ChevronDown className="h-4 w-4" />
               </button>
 
               {showPropertyMenu && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2">
-                  <Link
-                    to="/property/1"
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                  >
-                    Property 1
-                  </Link>
-                  <Link
-                    to="/property/2"
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                  >
-                    Property 2
-                  </Link>
+                <div className="absolute top-full left-0 pt-2 w-48">
+                  <div className="bg-white rounded-md shadow-lg py-2 z-50">
+                    <Link
+                      to="/property/1"
+                      className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+                    >
+                      Property 1
+                    </Link>
+                    <Link
+                      to="/property/2"
+                      className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+                    >
+                      Property 2
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
