@@ -32,7 +32,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="relative w-full h-[380px] md:h-[480px]">
+    <section className="relative w-full h-[380px] md:h-[480px] overflow-hidden">
       <Carousel
         plugins={[
           Autoplay({
@@ -40,11 +40,12 @@ const ImageCarousel = () => {
           }),
         ]}
         className="w-full h-full"
+        opts={{ loop: true }}
       >
-        <CarouselContent className="h-full">
+        <CarouselContent className="h-full ml-0">
           {images.map((image, index) => (
-            <CarouselItem key={index} className="h-full">
-              <div className="relative w-full h-full">
+            <CarouselItem key={index} className="h-full pl-0">
+              <div className="relative w-full h-[380px] md:h-[480px] overflow-hidden">
                 <img
                   src={image.src}
                   alt={image.alt}
