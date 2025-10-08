@@ -2,6 +2,14 @@ import { useParams } from "react-router-dom";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import { MapPin, Home, Maximize, Bed, Bath, Car } from "lucide-react";
+import property1 from "@/assets/property-1.jpg";
+import carousel1 from "@/assets/carousel-1.jpg";
+import carousel2 from "@/assets/carousel-2.jpg";
+import carousel3 from "@/assets/carousel-3.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
+import gallery8 from "@/assets/gallery-8.jpg";
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -38,14 +46,14 @@ const PropertyDetail = () => {
       status: "Approved",
     },
     images: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop",
+      property1,
+      carousel1,
+      carousel2,
+      carousel3,
+      gallery5,
+      gallery6,
+      gallery7,
+      gallery8,
     ],
   };
 

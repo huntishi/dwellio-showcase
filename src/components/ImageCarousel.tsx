@@ -6,23 +6,27 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import carousel1 from "@/assets/carousel-1.jpg";
+import carousel2 from "@/assets/carousel-2.jpg";
+import carousel3 from "@/assets/carousel-3.jpg";
+import carousel4 from "@/assets/carousel-4.jpg";
 
 const ImageCarousel = () => {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=600&fit=crop",
+      src: carousel1,
       alt: "Luxury modern home",
     },
     {
-      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop",
+      src: carousel2,
       alt: "Beautiful property exterior",
     },
     {
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=600&fit=crop",
+      src: carousel3,
       alt: "Elegant house design",
     },
     {
-      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=600&fit=crop",
+      src: carousel4,
       alt: "Premium property view",
     },
   ];

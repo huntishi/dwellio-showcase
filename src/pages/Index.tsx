@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import ImageCarousel from "@/components/ImageCarousel";
 import Footer from "@/components/Footer";
 import { Building2, Award, Users, TrendingUp, Bed, Bath, Maximize } from "lucide-react";
+import property1 from "@/assets/property-1.jpg";
+import property2 from "@/assets/property-2.jpg";
+import aboutArchitecture from "@/assets/about-architecture.jpg";
+import aboutInterior from "@/assets/about-interior.jpg";
 
 const Index = () => {
   return (
@@ -29,7 +33,7 @@ const Index = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop"
+                    src={property1}
                     alt="Luxury Villa Property"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -68,7 +72,7 @@ const Index = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+                    src={property2}
                     alt="Modern Penthouse Property"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -162,12 +166,12 @@ const Index = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop"
+                src={aboutArchitecture}
                 alt="Modern architecture"
                 className="rounded-lg shadow-lg"
               />
               <img
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop"
+                src={aboutInterior}
                 alt="Luxury interior"
                 className="rounded-lg shadow-lg mt-8"
               />

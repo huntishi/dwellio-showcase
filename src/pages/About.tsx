@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import { Target, Eye, Award } from "lucide-react";
+import aboutBuilding from "@/assets/about-building.jpg";
 
 const About = () => {
   return (
@@ -30,7 +31,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
+                src={aboutBuilding}
                 alt="Modern building"
                 className="rounded-lg shadow-lg"
               />
