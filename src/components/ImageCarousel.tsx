@@ -32,7 +32,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="relative w-full h-[500px] md:h-[600px]">
+    <section className="relative w-full h-[380px] md:h-[480px]">
       <Carousel
         plugins={[
           Autoplay({

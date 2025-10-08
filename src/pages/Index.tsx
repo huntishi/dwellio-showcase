@@ -168,12 +168,12 @@ const Index = () => {
               <img
                 src={aboutArchitecture}
                 alt="Modern architecture"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg h-64 w-full object-cover"
               />
               <img
                 src={aboutInterior}
                 alt="Luxury interior"
-                className="rounded-lg shadow-lg mt-8"
+                className="rounded-lg shadow-lg mt-8 h-64 w-full object-cover"
               />
             </div>
           </div>

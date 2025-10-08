@@ -33,7 +33,7 @@ const About = () => {
               <img
                 src={aboutBuilding}
                 alt="Modern building"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg h-96 w-full object-cover"
               />
             </div>
           </div>
