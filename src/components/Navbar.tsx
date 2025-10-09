@@ -17,8 +17,8 @@ const Navbar = () => {
           {/* Left side - Phone number */}
           <div className="flex items-center gap-2 text-white">
             <Phone className="h-4 w-4" />
-            <a href="tel:+1234567890" className="text-sm font-medium hover:text-accent transition-colors">
-              +1 (234) 567-890
+            <a href="tel:+919009995582" className="text-sm font-medium hover:text-accent transition-colors">
+              +91 90099 95582
             </a>
           </div>
 
@@ -51,13 +51,13 @@ const Navbar = () => {
                       to="/property/1"
                       className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                     >
-                      Property 1
+                      Ma Nagar Colony
                     </Link>
                     <Link
                       to="/property/2"
                       className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                     >
-                      Property 2
+                      Tiyansh Capital City
                     </Link>
                   </div>
                 </div>
@@ -109,14 +109,14 @@ const Navbar = () => {
               className="block px-3 py-2 text-white hover:bg-primary-foreground/10 rounded-md"
               onClick={() => setIsOpen(false)}
             >
-              Property 1
+              Ma Nagar Colony
             </Link>
             <Link
               to="/property/2"
               className="block px-3 py-2 text-white hover:bg-primary-foreground/10 rounded-md"
               onClick={() => setIsOpen(false)}
             >
-              Property 2
+              Tiyansh Capital City
             </Link>
             <Link
               to="/about"

@@ -34,29 +34,29 @@ const Index = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={property1}
-                    alt="Luxury Villa Property"
+                    alt="Ma Nagar Colony"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy-dark/50 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                   <div className="inline-block px-4 py-1 bg-accent rounded-full text-sm font-semibold mb-4">
                     Featured
                   </div>
                   <h3 className="text-3xl font-bold mb-3 group-hover:text-accent transition-colors">
-                    Luxury Villa Estate
+                    Ma Nagar Colony
                   </h3>
-                  <p className="text-gray-200 mb-4 line-clamp-2">
+                  <p className="text-black-200 mb-4 line-clamp-2">
                     Experience unparalleled luxury living in this magnificent estate featuring world-class amenities
                   </p>
                   <div className="flex items-center gap-6 text-sm">
                     <span className="flex items-center gap-2">
                       <Bed className="h-4 w-4 text-accent" />
-                      4 Beds
+                      2 Beds
                     </span>
                     <span className="flex items-center gap-2">
                       <Bath className="h-4 w-4 text-accent" />
-                      3 Baths
+                      1 Baths
                     </span>
                     <span className="flex items-center gap-2">
                       <Maximize className="h-4 w-4 text-accent" />
@@ -78,14 +78,14 @@ const Index = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy-dark/50 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                   <div className="inline-block px-4 py-1 bg-accent rounded-full text-sm font-semibold mb-4">
                     Premium
                   </div>
                   <h3 className="text-3xl font-bold mb-3 group-hover:text-accent transition-colors">
-                    Modern Penthouse
+                    Tiyansh Capital City
                   </h3>
-                  <p className="text-gray-200 mb-4 line-clamp-2">
+                  <p className="text-black-200 mb-4 line-clamp-2">
                     Sophisticated urban living with breathtaking city views and contemporary design excellence
                   </p>
                   <div className="flex items-center gap-6 text-sm">
@@ -154,7 +154,7 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">About Us</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                With over 20 years of experience in the real estate industry, we have established ourselves as a trusted name in property development and sales.
+                With over 10 years of experience in the real estate industry, we have established ourselves as a trusted name in property development and sales.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
                 Our commitment to quality, transparency, and customer satisfaction has helped hundreds of families find their dream homes.
