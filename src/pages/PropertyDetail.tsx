@@ -3,24 +3,24 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import { MapPin, Home, Maximize, Bed, Bath, Car } from "lucide-react";
 import property1 from "@/assets/property-1.jpg";
+import property2 from "@/assets/property-2.jpg";
 import carousel1 from "@/assets/carousel-1.jpg";
 import carousel2 from "@/assets/carousel-2.jpg";
 import carousel3 from "@/assets/carousel-3.jpg";
+import carousel4 from "@/assets/carousel-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 
-const PropertyDetail = () => {
-  const { id } = useParams();
-
-  // Mock data - in real app, fetch based on id
-  const property = {
-    id: id,
-    name: `Luxury Villa ${id}`,
+// Property data
+const propertiesData = {
+  "1": {
+    id: "1",
+    name: "Luxury Villa in Downtown",
     location: "Downtown District, Premium Location",
     price: "$1,250,000",
-    overview: "This stunning luxury villa offers the perfect blend of modern design and comfortable living. Situated in a prime location with breathtaking views, this property features high-end finishes and spacious layouts perfect for family living.",
+    overview: "This stunning luxury villa offers the perfect blend of modern design and comfortable living. Situated in a prime location with breathtaking views, this property features high-end finishes and spacious layouts perfect for family living. The villa boasts contemporary architecture with large windows that flood the interiors with natural light.",
     specifications: {
       bedrooms: 4,
       bathrooms: 3,
@@ -55,7 +55,69 @@ const PropertyDetail = () => {
       gallery7,
       gallery8,
     ],
-  };
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2382688092304!2d77.37833731508045!3d28.627850682421856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635234567890!5m2!1sen!2sin",
+  },
+  "2": {
+    id: "2",
+    name: "Modern Apartment in Central Park",
+    location: "Central Park Avenue, City Center",
+    price: "$850,000",
+    overview: "Experience urban luxury in this beautifully designed modern apartment. Located in the heart of the city with stunning park views, this residence combines style, comfort, and convenience. Features premium finishes throughout, with an open floor plan that maximizes space and light. Perfect for professionals and small families seeking a sophisticated city lifestyle.",
+    specifications: {
+      bedrooms: 3,
+      bathrooms: 2,
+      area: "2,200 sq ft",
+      parking: 1,
+      floors: 1,
+      yearBuilt: 2024,
+    },
+    amenities: [
+      "Rooftop Terrace",
+      "Modern Gym",
+      "Concierge Service",
+      "Smart Home System",
+      "Underground Parking",
+      "Infinity Pool",
+      "Co-working Space",
+      "Pet-Friendly Area",
+    ],
+    registration: {
+      rera: "RERA987654321",
+      developer: "Urban Living Developers",
+      possession: "Under Construction - Dec 2025",
+      status: "Approved",
+    },
+    images: [
+      property2,
+      carousel4,
+      carousel3,
+      carousel2,
+      gallery8,
+      gallery7,
+      gallery6,
+      gallery5,
+    ],
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8950562087845!2d77.20902931508012!3d28.61395998242761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd371d9e7a15%3A0x1f8f1ab5c0b6e5c5!2sConnaught%20Place%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1635234567891!5m2!1sen!2sin",
+  },
+};
+
+const PropertyDetail = () => {
+  const { id } = useParams();
+
+  // Get property data based on ID
+  const property = propertiesData[id as keyof typeof propertiesData];
+
+  // If property not found, show error
+  if (!property) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-primary mb-4">Property Not Found</h1>
+          <p className="text-muted-foreground">The property you're looking for doesn't exist.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">
@@ -183,7 +245,7 @@ const PropertyDetail = () => {
                 <h2 className="text-2xl font-bold text-primary mb-4">Location</h2>
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2382688092304!2d77.37833731508045!3d28.627850682421856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635234567890!5m2!1sen!2sin"
+                    src={property.mapUrl}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
