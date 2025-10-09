@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import { Target, Eye, Award } from "lucide-react";
-import aboutBuilding from "@/assets/about-building.jpg";
+import aboutBuilding from "@/assets/carousel-4.jpg";
 
 const About = () => {
   return (

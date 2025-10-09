@@ -34,7 +34,7 @@ const Index = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={property1}
-                    alt="Ma Nagar Colony"
+                    alt="Maa Nagar Colony"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -44,7 +44,7 @@ const Index = () => {
                     Featured
                   </div>
                   <h3 className="text-3xl font-bold mb-3 group-hover:text-accent transition-colors">
-                    Ma Nagar Colony
+                    Maa Nagar Colony
                   </h3>
                   <p className="text-black-200 mb-4 line-clamp-2">
                     Experience unparalleled luxury living in this magnificent estate featuring world-class amenities

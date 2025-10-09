@@ -51,7 +51,7 @@ const Navbar = () => {
                       to="/property/1"
                       className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                     >
-                      Ma Nagar Colony
+                      Maa Nagar Colony
                     </Link>
                     <Link
                       to="/property/2"
@@ -73,14 +73,14 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link
+            {/* <Link
               to="/contact"
               className={`text-white hover:text-accent transition-colors ${
                 isActive("/contact") ? "text-accent font-semibold" : ""
               }`}
             >
               Contact Us
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile menu button */}
@@ -109,7 +109,7 @@ const Navbar = () => {
               className="block px-3 py-2 text-white hover:bg-primary-foreground/10 rounded-md"
               onClick={() => setIsOpen(false)}
             >
-              Ma Nagar Colony
+              Maa Nagar Colony
             </Link>
             <Link
               to="/property/2"
@@ -125,13 +125,13 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <Link
+            {/* <Link
               to="/contact"
               className="block px-3 py-2 text-white hover:bg-primary-foreground/10 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

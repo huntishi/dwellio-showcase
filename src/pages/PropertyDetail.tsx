@@ -39,7 +39,7 @@ import tccGal20 from "@/assets/tcc/temple-min.jpg";
 const propertiesData = {
   "1": {
     id: "1",
-    name: "Ma Nagar Colony",
+    name: "Maa Nagar Colony",
     location: "Behind of deen dayal Purram Phase-I TV Tower road, Bade attar mula Raigarh, Chattisgarh - 496001",
     price: "",
     overview: "This stunning luxury plots offers the perfect blend of modern design and comfortable living. Situated in a prime location with breathtaking views, this property features high-end finishes and spacious layouts perfect for family living. The villa boasts contemporary architecture with large windows that flood the interiors with natural light.",
