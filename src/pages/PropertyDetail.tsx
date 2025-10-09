@@ -296,9 +296,12 @@ const PropertyDetail = () => {
                 </div>
                 <div className="mt-4 text-center">
                   <p className="text-sm text-muted-foreground mb-2">Interested in this property?</p>
-                  <button className="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                  <a 
+                    href="tel:+919009995582"
+                    className="block w-full bg-accent hover:bg-accent/90 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-center"
+                  >
                     Schedule a Visit
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
